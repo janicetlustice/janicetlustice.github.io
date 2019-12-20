@@ -63,5 +63,3 @@ function randombg(){
                 "url('https://wallpapercave.com/wp/wp4200954.jpg')"];
   document.body.style.backgroundImage = bigSize[random]; 
 }
-
-
