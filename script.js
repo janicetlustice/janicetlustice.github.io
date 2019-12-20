@@ -48,7 +48,7 @@ var quotes = ["Janice ambice<br>- Honzík", "Janice babice<br>- Honzík", "Janic
 function startDate() {
   var d = new Date();
   var days = ["Neděle","Pondělí","Úterý","Středa","Čtvrtek","Pátek","Sobota"];
-  document.getElementById("date").innerHTML = days[d.getDay()]+" | "+[d.getMonth()+1]+"/"+d.getDate()+"/"+d.getFullYear();
+  document.getElementById("date").innerHTML = days[d.getDay()]+" | "+d.getDate()+"/"+[d.getMonth()+1]+"/"+d.getFullYear();
 }
 function randombg(){
   var random= Math.floor(Math.random() * 6) + 0;
