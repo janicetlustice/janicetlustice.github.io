@@ -2,7 +2,6 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Janice</title>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
@@ -12,8 +11,26 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <body onload="startTime(); startDate()">
     <div class="container">
+      <form id = "searchform"     action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+<div id="googleflex">
+<input name="sitesearch" type="hidden" value="">
+<input id = 'textbox' autocomplete="on" class="form-control search" name="q" placeholder="Google vyhledávání" required="required"  type="text">
+<button id = "googles" class="button" type="submit">Vyhledej</button>
+        </div>
+</form>
       <div id="date"></div>
       <div id="display"></div>
+      <div id="weather">
+       <a id = "weather_brno" class="weatherwidget-io" href="https://forecast7.com/cs/49d1916d61/brno-stred/" data-label_1="BRNO-STŘED" data-label_2="WEATHER" data-days="3" data-theme="dark" >BRNO</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<a id = "weather_ova" class="weatherwidget-io" href="https://forecast7.com/cs/49d7918d24/ostrava-city-district/" data-label_1="OSTRAVA-MĚSTO" data-label_2="WEATHER" data-days="3" data-theme="dark" >OSTRAVA-MĚSTO WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+        </div>
+
       <div id="content">
         <p id="quote">Náhodná Janice <br/>Od Honzíka</p>
       </div>

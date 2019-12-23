@@ -5,7 +5,7 @@ html, body {
   width: 100%;
   position: absolute;
   background-color: black;
-  background-image: url('https://www.elsetge.cat/myimg/f/100-1002878_elduvik-faroe-islands-wallpaper-faroe-island-4k.jpg');
+  background-image: url('https://wallpapercave.com/wp/wp4200963.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -119,6 +119,21 @@ p :hover {
   opacity: 0.4;
   filter: alpha(opacity=40); /* For IE8 and earlier */
 }
+#weather {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+#weather_brno {
+  opacity: 0.6;
+  width: 30%;
+  margin: 5px;
+}
+#weather_ova {
+  opacity: 0.6;
+  width: 30%;
+  margin: 5px;
+}
 
 .hold {
   width: 100%;
@@ -139,14 +154,26 @@ p :hover {
   transition: 0.5s;
   padding-bottom: 5px;
 }
-
+#googles {
+  outline: none;
+  text-decoration: none;
+  opacity: 0.6;
+  background-color: black;
+  color: white;
+  border: thin solid white;
+  height: 40px;
+  width: 100px;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+/*
 #gen:hover {
   background-color: white;
   color: black;
   border: thin solid black;
   opacity: 0.8;
 }
-
+*/
 #gen a {
   text-decoration: none;
 }
@@ -154,7 +181,22 @@ p :hover {
 #date {
   color: white;
 }
-
+#googleflex {
+  display: flex;
+  justify-content: center;
+}
+#searchform{
+  padding-top: 7px;
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 45px;
+}
+#textbox{
+  background-color: black;
+  opacity: 0.6;
+  color: white;
+  height: 40px;
+}
 @media screen 
  and (max-device-width: 800px) 
   and (max-device-height: 640px) 
